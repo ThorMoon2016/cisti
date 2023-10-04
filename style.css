@@ -1,0 +1,413 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ececec;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Stil za HEADER */
+header {
+    background-color: #dbdadb; /* Boja pozadine */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sjena ispod headera */
+}
+
+/* Stil za logo */
+.logo img {
+    width: 40px; /* Prilagodite veličinu vašem logotipu */
+}
+
+/* Stil za logo samo na desktop verziji */
+@media (min-width: 768px) {
+    .logo img {
+        display: block; /* Postavite sliku da bude blok-element */
+        margin-left: 750px; /* Centriraj sliku horizontalno */
+    }
+}
+
+/* FOOTER */
+footer {
+    background: #c2b7b7;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+    clear: both; /* Dodajte clear property kako biste spriječili preklapanje sa sadržajem */
+}
+
+/* Postavite željenu veličinu ikonica */
+.social-icons a img {
+    width: 24px;
+    height: 24px;
+    margin: 0 8px;
+}
+
+/* Centriraj tekst i ikonice unutar footera */
+.footer-content {
+    text-align: center;
+}
+
+/* Povećajte veličinu i postavite crnu boju za Font Awesome ikone */
+.social-icons a i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+
+
+/* Stil za LOGO samo na desktop verziji */
+@media (min-width: 768px) {
+    .logo img {
+        display: block; /* Postavite sliku da bude blok-element */
+        margin-left: 750px; /* Centriraj sliku horizontalno */
+    }
+}
+
+/* Stil za ikonu za otvaranje menija MENI */
+.menu-toggle {
+    display: none; /* Početno sakrijte ikonu na većim ekranima */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-line {
+    width: 25px;
+    height: 3px;
+    background-color: #333; /* Boja linija */
+    margin: 3px 0;
+}
+
+/* Stil za navigacijski meni */
+.menu {
+    display: flex;
+    align-items: center;
+    background-color: rgb(202, 167, 202);
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Dodajte ovu liniju kako biste postavili smjer na "column" */
+    font-size: 20px;
+}
+
+.menu li {
+    margin-right: 20px; /* Razmak između opcija menija */
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333; /* Boja teksta */
+    font-weight: bold;
+    transition: color 0.3s ease; /* Animacija promjene boje teksta */
+}
+
+.menu a:hover {
+    color: #ff6600; /* Boja teksta prilikom prelaska mišem */
+}
+
+
+/* Stil za MENI na desktop uređaju */
+@media (min-width: 768px) {
+    .menu {
+        display: flex;
+        justify-content: center; /* Centrirajte stavke menija horizontalno */
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: row; /* Postavite smjer na "row" da stavke menija budu jedna pored druge */
+    }
+
+    .menu li {
+        margin-right: 20px; /* Razmak između stavki menija na desktop verziji */
+        margin-bottom: 0; /* Uklonite razmak s donje strane stavki menija na desktop verziji */
+    }
+}
+
+
+/* Stil za MENI na mobilnim uređajima */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+        justify-content: flex-end; /* Pomerite ikonu menija s desne strane */
+    }
+
+    /* Stil za MENI koji se otvara */
+    .menu {
+        display: none;
+        position: fixed; /* Fiksirajte meni na ekranu */
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to left, rgba(255, 255, 255, 1) 70%, rgba(196, 196, 196, 0.6) 30%);
+    
+        z-index: 9999; /* Postavite viši z-index da prekrije sve ostalo */
+        flex-direction: column;
+        align-items: flex-end; /* Poravnajte stavke s desne strane */
+        justify-content: flex-start; /* Poravnajte meni prema vrhu */
+        padding-right: 10%; /* Dodajte prostor s desne strane */
+        overflow-y: hidden; /* Onemogućite skrolovanje na stranici */
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    /* Stil za opcije menija MENI */
+    .menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: right; /* Poravnajte tekst s desne strane */
+        padding-top: 30px; /* Pomjerite tekst prema dolje */
+    }
+
+    .menu li {
+        margin-bottom: 10px;
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: #807f7f;
+        font-weight: bold;
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+        transition: color 0.3s ease;
+        margin-right: 10px; /* Pomjerite slova prema dolje */
+        font-family: Arial, sans-serif;
+    }
+
+    .menu a:hover {
+        color: #ff6600;
+    }
+}
+
+  /* Dodajte ove stilove u vaš CSS fajl (style.css) */
+
+/* Stil za naslov */
+.main-title {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: -40px;
+}
+
+/* Dodajte ove stilove u vaš CSS fajl (style.css) */
+
+/* Stil za checkmarkove */
+.checkmarks {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Postavite da se checkmarkovi i tekst prikažu s lijeva na desno */
+    margin-top: 20px;
+}
+
+.checkmark {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.checkmark i {
+    margin-right: 10px;
+    color: #4CAF50; /* Boja checkmark ikone */
+}
+
+.checkmark span {
+    font-size: 18px; /* Veličina teksta uz checkmark */
+}
+
+/* Dodajte ove stilove u vaš CSS fajl (style.css) */
+
+/* Stil za ocjenu */
+.rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.rating img {
+    width: 100%; /* Prilagodite veličinu slike prema vašoj želji */
+}
+
+.rating-text {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.stars {
+    color: #4CAF50; /* Boja zvjezdica */
+    font-size: 24px; /* Veličina zvjezdica */
+    margin-top: 10px;
+}
+
+
+/* Dodajte ove stilove u vaš CSS fajl (style.css) */
+
+.red-box {
+    background-color: rgb(192, 41, 41);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 10px; /* Dodajte zaobljenost ivicama */
+}
+
+/* Smanjivanje cijelog crvenog okvira za mobilnu verziju */
+@media (max-width: 768px) {
+    .red-box {
+        width: 70%; /* Postavite širinu na manje od 100% (na primjer, 80%) */
+        margin: 0 auto; /* Centrirajte okvir na sredinu */
+        padding: 8px; /* Smanjite unutarnji prostor oko teksta */
+        font-size: 14px; /* Smanjite veličinu fonta */
+        border-radius: 10px; /* Smanjite zaobljenost ivicama */
+        margin-top: 50px; /* Smanjite margine prema gore */
+    }
+}
+
+
+.how-it-works {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.step {
+    margin-top: 20px;
+}
+
+.step img {
+    width: 40px; /* Prilagodite veličinu slike prema potrebi */
+}
+
+
+
+.reasons-container {
+    display: flex;
+    flex-direction: column; /* Postavite smjer na column kako bi boxovi bili jedan ispod drugog */
+    align-items: center; /* Centrirajte sadržaj horizontalno */
+    justify-content: center; /* Centrirajte sadržaj vertikalno */
+}
+
+.reasons-to-use {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.reason-box {
+    margin-top: 20px;
+    margin-bottom: 20px !important; /* Dodajte !important pravilo */
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 250px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+
+
+
+.reason-box img {
+    width: 20%; /* Slika će popuniti cijelu širinu boxa */
+    border-bottom: 1px solid #ccc; /* Linija ispod slike */
+    padding-bottom: 10px; /* Razmak između slike i teksta */
+}
+
+.reason-text {
+    text-align: left;
+    padding-top: 10px; /* Razmak između slike i teksta */
+}
+
+
+h2 {
+    text-align: center;
+}
+
+
+.comment-box {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.user-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.user-name {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.rating {
+    color: #FFD700;
+    font-size: 18px;
+    margin-top: 2px;
+}
+
+.user-comment {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.written-by {
+    font-style: italic;
+    font-size: 14px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+
+
+
+.faq-section {
+    margin-top: 50px;
+}
+
+.faq-item {
+    margin-top: 20px;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(192, 192, 192); /* Crvena linija ispod pitanja */
+    padding-bottom: 10px;
+}
+
+.question-text {
+    flex: 1;
+}
+
+.answer {
+    display: none;
+}
+
+.toggle {
+    cursor: pointer;
+    color: blue;
+    font-weight: bold;
+}
