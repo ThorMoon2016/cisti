@@ -242,6 +242,7 @@ footer {
 
 .rating img {
     width: 100%; /* Prilagodite veličinu slike prema vašoj želji */
+    margin-top: 30px;
 }
 
 .rating-text {
